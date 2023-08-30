@@ -15,7 +15,15 @@ class CreateList{
 
     }
     fun(e){
-        console.log(e.target.getAttribute('data-id'));
+
+        if(e.target.style.textDecoration =='line-through'){
+            e.target.style.textDecoration ='none';
+            e.target.style.color = 'rgb(89, 96, 66)';
+           
+        }else{
+            e.target.style.textDecoration ='line-through';
+            e.target.style.color ='red'
+        }
     }
 }
 

@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 10px;
+
+}
+h1{
+    text-align: center;
+    margin-bottom:10px ;
+}
+
+#conrainer{
+    width: 300px;
+    height:fit-content;
+    padding: 10px;
+    background: rgb(217, 226, 186);
+    margin: auto;
+    border-radius: 0px;
+    /* position: relative; */
+}
+#input-container{
+    width: 300px;
+    /* padding: 2px; */
+    height: fit-content;
+    /* background: rgb(185, 220, 10); */
+    /* position: absolute; */
+    margin-bottom: 10px;
+    
+}
+
+input[type=text]{
+    width: 216px;
+    height: 33px;
+    float: left;
+    border: none;
+    outline: none;
+    border-radius:10px 0px 0px 10px ;
+    padding-left: 2px ;
+    padding-right:2px ;
+    font-size:17px ;
+
+}
+
+#btn{
+    width: 80px;
+    height: 33px;
+    margin: 0;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    color: black;
+    /* transition: background-color,color 2s; */
+    /* transition: color 1s; */
+    border-radius: 0px 10px 10px 0px;
+}
+#btn:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+}
+.item-container{
+    width: 296px;
+    height: 30px;
+    margin-top: 2px;
+    background: rgb(255, 255, 255);
+    padding: 2px;
+    color: rgb(89, 96, 66);
+}
+
+.item-container h2{
+    display: inline-block;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}

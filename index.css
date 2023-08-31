@@ -68,6 +68,7 @@ input[type=text]{
     background: rgb(255, 255, 255);
     padding: 2px;
     color: rgb(89, 96, 66);
+    position: relative;
    
 }
 
@@ -77,4 +78,28 @@ input[type=text]{
     text-transform: capitalize;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
+    /* float: left; */
+}
+.tool-container{
+    float: right;
+    /* position: absolute; */
+    z-index: 1;
+    margin-top: 6px;
+    /* margin-right: 50px; */
+    /* background: red; */
+}
+
+i{
+    cursor: pointer;
+}
+i:hover::before{
+    /* width: 200%;
+    height: 200%; */
+    background: gray;
+    padding: 2px;
+
+
+}
+i:hover{
+    color: white;
 }

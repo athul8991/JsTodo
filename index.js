@@ -2,19 +2,33 @@ class CreateList{
     constructor(item,index){
         const itemContainer = document.createElement('div');
         const title = document.createElement('h2');
+        const toolContainer = document.createElement('div');
+        const del = document.createElement('i');
 
         itemContainer.classList.add('item-container');
+        toolContainer.classList.add('tool-container')
+        del.classList.add('fa-solid','fa-trash-can','fa-lg');
+
         title.innerHTML = item;
         title.onclick = this.fun;
+        del.onclick = this.delete;
 
+        toolContainer.appendChild(del);
         title.dataset.id = index;
         itemContainer.appendChild(title);
+        itemContainer.appendChild(toolContainer);
 
         document.querySelector('#conrainer').appendChild(itemContainer);
 
 
     }
+    delete(e){
+        const selDel = e.target.parentElement.parentElement;
+        selDel.remove();
+    }
     fun(e){
+        const selTitle = e.target.parentElement;
+        console.log(selTitle);
 
         if(e.target.style.textDecoration =='line-through'){
             e.target.style.textDecoration ='none';
